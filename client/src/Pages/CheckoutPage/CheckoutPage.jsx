@@ -6,6 +6,7 @@ function CheckoutPage() {
 
     return (
         <>
+            <title>Mutiny - Checkout</title>
             <CheckoutPageHeader />
             <div className="d-flex flex-column flex-lg-row gap-4 m-5 justify-content-evenly align-items-stretch w-100">
                 <ReviewOrderSection />

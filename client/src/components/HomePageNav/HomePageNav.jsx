@@ -8,7 +8,7 @@ function HomePageNav() {
             <div className="container-fluid gap-2">
                 <div className="d-flex align-items-center gap-2">
                     <img src={companyLogo} alt="company logo" width={30} />
-                    <a className="navbar-brand">Mutiny</a>
+                    <a className="navbar-brand" href='/'>Mutiny</a>
                 </div>
                 <form className="d-flex" role="search">
                     <div className="input-group">
@@ -19,12 +19,12 @@ function HomePageNav() {
                     </div>
                 </form>
                 <div>
-                    <button className="btn btn-outline-secondary btn-glass">
+                    <a className="btn btn-outline-secondary btn-glass" href='/orders'>
                         <i className="bi bi-bag-check"></i>
-                    </button>
-                    <button className="btn btn-outline-secondary btn-glass">
+                    </a>
+                    <a className="btn btn-outline-secondary btn-glass" href='/checkout'>
                         <i className="bi bi-cart2"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
         </nav>

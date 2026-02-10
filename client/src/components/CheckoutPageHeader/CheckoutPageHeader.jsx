@@ -8,7 +8,7 @@ function checkoutPageHeader() {
                     <div className="container-fluid gap-2">
                         <div className="d-flex align-items-center gap-2">
                             <img src={companyLogo} alt="company logo" width={30} />
-                            <a className="navbar-brand">Mutiny</a>
+                            <a className="navbar-brand" href="/">Mutiny</a>
                         </div>
                         <div>
                             Checkout (0 items)

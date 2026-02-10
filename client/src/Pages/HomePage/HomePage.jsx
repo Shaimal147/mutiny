@@ -6,6 +6,7 @@ function HomePage() {
 
     return (
         <>
+            <title>Mutiny - Home</title>
             <HomePageNav />
             <div className="product-container">
                 <ProductCard />
