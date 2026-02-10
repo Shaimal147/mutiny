@@ -1,7 +1,7 @@
-import companyLogo from '../assets/icons8-armor.svg'
-import './Nav.css'
+import companyLogo from '../../assets/icons8-armor.svg'
+import './HomePageNav.css'
 
-function Nav() {
+function HomePageNav() {
 
     return (
         <nav className="navbar glass-navbar">
@@ -31,4 +31,4 @@ function Nav() {
     )
 }
 
-export default Nav
+export default HomePageNav

@@ -9,3 +9,8 @@ html, body {
   width: 100%;
   font-family: "Cinzel", serif;
 }
+
+#root {
+  height: 100%;
+  width: 100%;
+}

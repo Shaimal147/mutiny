@@ -1,12 +1,12 @@
-import Nav from '../components/Nav'
-import ProductCard from '../components/ProductCard'
+import HomePageNav from '../../components/HomePageNav/HomePageNav'
+import ProductCard from '../../components/ProductCard/ProductCard'
 import './HomePage.css'
 
 function HomePage() {
 
     return (
         <>
-            <Nav />
+            <HomePageNav />
             <div className="product-container">
                 <ProductCard />
                 <ProductCard />

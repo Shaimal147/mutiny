@@ -1,0 +1,15 @@
+.glass-navbar {
+  background: linear-gradient(
+    135deg,
+    rgba(90, 60, 30, 0.45),
+    rgba(160, 120, 60, 0.35)
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 215, 150, 0.25);
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.15);
+
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
