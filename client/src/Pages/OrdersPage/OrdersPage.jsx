@@ -1,4 +1,4 @@
-import OrderCard from "../../components/OrderCard/OrderCard";
+import OrderCard from "../../components/OrderCard/OrderCard"
 import OrdersPageNav from "../../components/OrdersPageNav/OrdersPageNav";
 
 function OrdersPage() {
