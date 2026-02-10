@@ -1,4 +1,4 @@
-import './ReviewOrderSection.css'
+import styles from './ReviewOrderSection.module.css'
 
 function ReviewOrderSection() {
 
@@ -7,7 +7,7 @@ function ReviewOrderSection() {
             <div className="card-body">
                 <h5 className="card-title">Review your order</h5>
                 <p className="card-text">Your cart is empty.</p>
-                <a href="#" className="btn btn-secondary">View products</a>
+                <a href="#" className={`btn ${styles["btn-secondary"]}`}>View products</a>
             </div>
         </div>
     )

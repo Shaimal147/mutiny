@@ -1,6 +1,6 @@
 import HomePageNav from '../../components/HomePageNav/HomePageNav'
 import ProductCard from '../../components/ProductCard/ProductCard'
-import './HomePage.css'
+import styles from './HomePage.module.css'
 
 function HomePage() {
 
@@ -8,9 +8,7 @@ function HomePage() {
         <>
             <title>Mutiny - Home</title>
             <HomePageNav />
-            <div className="product-container">
-                <ProductCard />
-                <ProductCard />
+            <div className={`${styles["product-container"]}`}>
                 <ProductCard />
             </div>
         </>

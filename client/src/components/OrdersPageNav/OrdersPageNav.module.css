@@ -14,18 +14,27 @@
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn-outline-secondary:hover {
-  background-color: #8b5e2f;
-  border-color: #8b5e2f;
+.btn-outline-secondary.btn-glass {
+  border-color: transparent;
   color: #fff;
 }
 
-.btn-outline-secondary.btn-glass {
-  border-color: transparent;
-}
 
 .btn-outline-secondary.btn-glass:hover {
   background-color: #8b5e2f;
   border-color: #8b5e2f;
   color: #fff;
+}
+
+
+.btn-outline-secondary.btn-glass.active,
+.btn-outline-secondary.btn-glass[aria-current="page"] {
+  background-color: #8b5e2f;
+  border-color: #8b5e2f;
+  color: #fff;
+}
+
+.btn-outline-secondary.btn-glass.active:focus,
+.btn-outline-secondary.btn-glass:focus-visible {
+  box-shadow: none;
 }

@@ -1,18 +1,28 @@
-import './ProductCard.css'
+import styles from './ProductCard.module.css'
+import products from '../../Pages/HomePage/products.js'
 
 function ProductCard() {
 
     return (
-        <div className="card" style={{width: '18rem'}}>
-            <img src={null} className="card-img-top" alt="..." />
-            <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <button className="btn btn-outline-secondary btn-glass">
-                    <i className="bi bi-cart-plus"></i>
-                </button>
-            </div>
-        </div>
+    <>
+        {products.map((product) => {
+            return (
+                <div className="card" style={{width: '18rem'}} key={product.id}>
+                    <img src={product.image} className="card-img-top" alt="..." width={100}/>
+                    <div className="card-body">
+                        <h5 className="card-title">{product.name}</h5>
+                        <div className="card-text">
+                            <p></p>
+                            <p>{product.priceCents}</p>
+                        </div>
+                        <button className={`btn ${styles["btn-outline-secondary"]} ${styles["btn-glass"]}`}>
+                            <i className="bi bi-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            )
+        })}
+    </>    
     )
 }
 

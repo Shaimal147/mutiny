@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router'
 import HomePage from './Pages/HomePage/HomePage'
 import CheckoutPage from './Pages/CheckoutPage/CheckoutPage'
 import OrdersPage from './Pages/OrdersPage/OrdersPage'
+import NotFoundPage from './Pages/NotFoundPage'
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/orders" element={<OrdersPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
   )
 }

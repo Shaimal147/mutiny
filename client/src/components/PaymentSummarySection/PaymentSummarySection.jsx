@@ -1,4 +1,4 @@
-import './PaymentSummarySection.css'
+import styles from './PaymentSummarySection.module.css'
 
 function PaymentSummarySection() {
 
@@ -12,7 +12,7 @@ function PaymentSummarySection() {
                     <p>Total before tax:</p>
                     <p>Estimated tax (10%):</p>
                 </div>
-                <a href="#" className="btn btn-secondary">Place your order</a>
+                <a href="#" className={`btn ${styles["btn-secondary"]}`}>Place your order</a>
             </div>
         </div>
     )
