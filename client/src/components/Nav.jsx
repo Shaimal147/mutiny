@@ -20,10 +20,10 @@ function Nav() {
                 </form>
                 <div>
                     <button className="btn btn-outline-secondary btn-glass">
-                        <i class="bi bi-bag-check"></i>
+                        <i className="bi bi-bag-check"></i>
                     </button>
                     <button className="btn btn-outline-secondary btn-glass">
-                        <i class="bi bi-cart2"></i>
+                        <i className="bi bi-cart2"></i>
                     </button>
                 </div>
             </div>

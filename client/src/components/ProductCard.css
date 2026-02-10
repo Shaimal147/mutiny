@@ -1,0 +1,9 @@
+.btn-outline-secondary.btn-glass {
+  border-color: transparent;
+}
+
+.btn-outline-secondary.btn-glass:hover {
+  background-color: #8b5e2f;
+  border-color: #8b5e2f;
+  color: #fff;
+}
