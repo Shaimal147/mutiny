@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router'
 import companyLogo from '../../assets/icons8-armor.svg'
 import './HomePageNav.css'
 
@@ -8,7 +9,7 @@ function HomePageNav() {
             <div className="container-fluid gap-2">
                 <div className="d-flex align-items-center gap-2">
                     <img src={companyLogo} alt="company logo" width={30} />
-                    <a className="navbar-brand" href='/'>Mutiny</a>
+                    <NavLink className="navbar-brand" to='/'>Mutiny</NavLink>
                 </div>
                 <form className="d-flex" role="search">
                     <div className="input-group">
@@ -19,12 +20,12 @@ function HomePageNav() {
                     </div>
                 </form>
                 <div>
-                    <a className="btn btn-outline-secondary btn-glass" href='/orders'>
+                    <NavLink className="btn btn-outline-secondary btn-glass" to='/orders'>
                         <i className="bi bi-bag-check"></i>
-                    </a>
-                    <a className="btn btn-outline-secondary btn-glass" href='/checkout'>
+                    </NavLink>
+                    <NavLink className="btn btn-outline-secondary btn-glass" to='/checkout'>
                         <i className="bi bi-cart2"></i>
-                    </a>
+                    </NavLink>
                 </div>
             </div>
         </nav>
