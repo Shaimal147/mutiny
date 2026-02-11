@@ -1,6 +1,8 @@
+import { randomUUID } from 'crypto'
+
 const products = [
     {
-        id: crypto.randomUUID(),
+        id: randomUUID(),
         image: "/MedievalClaymore01_700x700.jpg",
         name: "Claymore Sword - New",
         rating: {
@@ -12,7 +14,7 @@ const products = [
 
     },
     {
-        id: crypto.randomUUID(),
+        id: randomUUID(),
         image: "/images.jpeg",
         name: "Battle Axe - New",
         rating: {

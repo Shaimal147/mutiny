@@ -1,6 +1,8 @@
+import { randomUUID } from 'crypto'
+
 const cartItems = [
   {
-    cartItemId: crypto.randomUUID(), 
+    cartItemId: randomUUID(), 
     productId: "PRODUCT_ID_HERE",
 
     name: "Claymore Sword - New",
