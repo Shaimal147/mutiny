@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import axios from 'axios'
+import { fetchProducts } from '../../api'
 import HomePageNav from '../../components/HomePageNav/HomePageNav'
 import ProductCard from '../../components/ProductCard/ProductCard'
 import styles from './HomePage.module.css'
@@ -7,16 +7,7 @@ import styles from './HomePage.module.css'
 function HomePage() {
     const [products, setProducts] = useState([])
         useEffect(() => {
-            async function fetchProducts() {
-                try {
-                    const res = await axios.get('/api/products')
-                    setProducts(res.data)
-                } catch (err) {
-                    console.log(err)
-                }
-            }
-
-            fetchProducts()
+            fetchProducts(setProducts)
         }, [])
     
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react' 
-import axios from 'axios'
+import { fetchCartItems } from '../../api'
 import CheckoutPageHeader from "../../components/CheckoutPageHeader/CheckoutPageHeader"
 import ReviewOrderSection from "../../components/ReviewOrderSection/ReviewOrderSection"
 import PaymentSummarySection from "../../components/PaymentSummarySection/PaymentSummarySection"
@@ -7,16 +7,7 @@ import PaymentSummarySection from "../../components/PaymentSummarySection/Paymen
 function CheckoutPage() {
     const [cartItems, setCartItems] = useState([])
     useEffect(() => {
-        async function fetchCartItems() {
-            try {
-                const res = await axios.get("/api/cart")
-                setCartItems(res.data)
-            } catch (err) {
-                console.log(err)
-            }
-        }
-
-        fetchCartItems()
+        fetchCartItems(setCartItems)
     }, [])
 
     return (

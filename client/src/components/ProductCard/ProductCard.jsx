@@ -7,7 +7,7 @@ function ProductCard({products}) {
         {products.map((product) => {
             return (
                 <div className="card" style={{width: '18rem'}} key={product.id}>
-                    <img src={product.image} className="card-img-top" alt="..." width={100}/>
+                    <img src={product.image} className="card-img-top" alt="Image of product" width={100}/>
                     <div className="card-body">
                         <h5 className="card-title">{product.name}</h5>
                         <div className="card-text">

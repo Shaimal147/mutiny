@@ -1,5 +1,6 @@
-import styles from './ReviewOrderSection.module.css'
+import { NavLink } from 'react-router'
 import { Fragment } from 'react'
+import styles from './ReviewOrderSection.module.css'
 
 function ReviewOrderSection({cartItems}) {
     const cartSectionText = cartItems.length === 0 ? 'Your cart is empty.' : 'Review your order'
@@ -11,7 +12,7 @@ function ReviewOrderSection({cartItems}) {
                 {cartItems.map((item) => {
                     return (
                         <Fragment key={item.cartItemId}>
-                            <img src={item.image} alt="" width={100} />
+                            <img src={item.image} alt="Image of product" width={100} />
                             <p className="card-text">{item.name}</p>
                             <p className="card-text">Quantity: {item.quantity}</p>
                             <p className="card-text">Total Price: ${(item.totalPriceCents / 100).toFixed(2)}</p>
