@@ -3,7 +3,7 @@ import styles from './PaymentSummarySection.module.css'
 function PaymentSummarySection() {
 
     return (
-        <div className="card" style={{width: '18rem', height: '18rem'}}>
+        <div className="card" style={{width: '18rem', height: '20rem'}}>
             <div className="card-body">
                 <h5 className="card-title">Payment Summary</h5>
                 <div className="card-text">
