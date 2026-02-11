@@ -1,14 +1,6 @@
-import { useState, useEffect } from 'react'
 import styles from './ProductCard.module.css'
 
-function ProductCard() {
-    const [products, setProducts] = useState([])
-    useEffect(() => {
-        fetch("/api/products")
-            .then((res) => res.json())
-            .then(setProducts)
-            .catch(console.error)
-    }, [])
+function ProductCard({products}) {
 
     return (
     <>
