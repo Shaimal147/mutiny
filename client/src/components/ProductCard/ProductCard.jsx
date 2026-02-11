@@ -1,7 +1,14 @@
+import { useState, useEffect } from 'react'
 import styles from './ProductCard.module.css'
-import products from '../../Pages/HomePage/products.js'
 
 function ProductCard() {
+    const [products, setProducts] = useState([])
+    useEffect(() => {
+        fetch("/api/products")
+            .then((res) => res.json())
+            .then(setProducts)
+            .catch(console.error)
+    }, [])
 
     return (
     <>
@@ -13,7 +20,7 @@ function ProductCard() {
                         <h5 className="card-title">{product.name}</h5>
                         <div className="card-text">
                             <p></p>
-                            <p>{product.priceCents}</p>
+                            <p>${(product.priceCents / 100).toFixed(2)}</p>
                         </div>
                         <button className={`btn ${styles["btn-outline-secondary"]} ${styles["btn-glass"]}`}>
                             <i className="bi bi-cart-plus"></i>
